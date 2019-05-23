@@ -1,30 +1,40 @@
 package com.example.banmi.fragment;
 
 
-import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.example.banmi.R;
+import com.example.banmi.base.BaseFragment;
+import com.example.banmi.presenter.home.HomePresenter;
+import com.example.banmi.view.home.HomeView;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HomeFragment extends Fragment {
+public class HomeFragment extends BaseFragment<HomeView, HomePresenter<HomeView>> implements HomeView {
 
 
     public HomeFragment() {
         // Required empty public constructor
     }
 
-
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+    protected void initService() {
+
     }
 
+    @Override
+    protected void initData() {
+
+    }
+
+    @Override
+    protected int createLayout() {
+        return R.layout.fragment_home;
+    }
+
+    @Override
+    protected HomePresenter createPresenter() {
+        return new HomePresenter();
+    }
 }
