@@ -7,10 +7,13 @@ import com.example.banmi.view.home.HomeView;
 
 import java.util.List;
 
-public class HomePresenter<V extends HomeView> extends BasePresenter<V> implements HomeModel.BaseCallBack {
-
+public class HomePresenter<V extends HomeView> extends BasePresenter<V> implements HomeModel.HomeCallBack {
+    private HomeModel mHomeModel = new HomeModel();
+    public void getHomeData(){
+        mHomeModel.getHomeData(this);
+    }
     @Override
-    public void getHomeSuccess(List<HomeBean> homeBeans) {
-
+    public void getHomeSuccess(HomeBean homeBeans) {
+        mView.setHomeData(homeBeans);
     }
 }
