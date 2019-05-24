@@ -7,7 +7,7 @@ import com.example.banmi.R;
 
 
 //我的关注etdgfddgsaeweggd
-//我的关注1111
+//我的关注111122
 public class AttentionActivity extends AppCompatActivity {
 
     @Override
