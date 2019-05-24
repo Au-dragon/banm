@@ -5,7 +5,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 import java.util.ArrayList;
-//cffhsretrerwetdxetyurdsertaresyt65rty
 public class VpAdapter extends FragmentStatePagerAdapter {
 
     ArrayList<Fragment> list;

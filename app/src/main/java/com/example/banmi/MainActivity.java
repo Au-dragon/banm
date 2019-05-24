@@ -35,7 +35,7 @@ import com.example.banmi.view.EmptyView;
 import java.util.ArrayList;
 
 import butterknife.BindView;
-//rtsger7dgytrstriedycgytytgholtsrdcujgyg
+
 public class MainActivity extends BaseActivity<EmptyView, EmptyPresenter<EmptyView>> implements EmptyView {
 
     @BindView(R.id.toolbar)
