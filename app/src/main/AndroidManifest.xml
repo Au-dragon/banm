@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.VerificationActivity"></activity>
+        <activity android:name=".activity.VerificationActivity" />
         <activity android:name=".activity.LoginThree" />
         <activity android:name=".activity.LoginTwo" />
         <activity android:name=".activity.LoginOne" />
@@ -30,6 +30,10 @@
         <activity android:name=".activity.DetectionActivity" />
         <activity android:name=".activity.PersonalActivity" />
         <activity android:name=".activity.MoneyActivity" />
+        <activity android:name=".activity.MoneyActivity" />
+        <activity android:name=".activity.NotifactionActivity" />
+        <activity android:name=".activity.MessageActivity" />
+        <activity android:name=".activity.MessageTalkActivity"></activity>
     </application>
 
 </manifest>
