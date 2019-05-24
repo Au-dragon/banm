@@ -178,7 +178,7 @@ public class MainActivity extends BaseActivity<EmptyView, EmptyPresenter<EmptyVi
         fragList.add(new BanmiFragment());
 
         tabLayout.addTab(tabLayout.newTab().setText("首页").setIcon(R.drawable.tablayout_select));
-        tabLayout.addTab(tabLayout.newTab().setText("半米").setIcon(R.drawable.tablayout_select2));
+        tabLayout.addTab(tabLayout.newTab().setText("伴米").setIcon(R.drawable.tablayout_select2));
 
         VpAdapter vpAdapter = new VpAdapter(getSupportFragmentManager(), fragList);
         viewPager.setAdapter(vpAdapter);

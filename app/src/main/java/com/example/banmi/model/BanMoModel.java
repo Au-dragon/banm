@@ -1,4 +1,7 @@
-package com.example.banmi;
+package com.example.banmi.model;
+
+import com.example.banmi.bean.BanMiBean;
+import com.example.banmi.MyServer;
 
 import io.reactivex.Observable;
 import io.reactivex.Observer;
@@ -17,7 +20,7 @@ public class BanMoModel {
         void OnFailer(String string);
     }
 
-    public void getData(CallBack callBack){
+    public void getData(final CallBack callBack){
         Retrofit retrofit = new Retrofit.Builder().baseUrl(MyServer.url)
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
@@ -35,12 +38,12 @@ public class BanMoModel {
 
                     @Override
                     public void onNext(BanMiBean banMiBean) {
-
+                        callBack.OnSuccees(banMiBean);
                     }
 
                     @Override
                     public void onError(Throwable e) {
-
+                        callBack.OnFailer(e.getMessage());
                     }
 
                     @Override

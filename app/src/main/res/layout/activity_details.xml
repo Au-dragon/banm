@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/details_tool"
+        android:layout_height="0dp"
+        android:layout_weight="0.9">
+
+        <Button
+            android:layout_width="@dimen/sp_25"
+            android:layout_height="@dimen/sp_25"
+            android:background="@mipmap/back_white"
+            android:id="@+id/details_bank"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_18"
+            android:layout_gravity="center"
+            android:textColor="@color/bleak"
+            android:text="伴米详情"/>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="@dimen/sp_10"
+        android:layout_weight="6.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/re"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_margin="@dimen/sp_10"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="@dimen/dp_140"
+                    android:id="@+id/details_img"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/details_img"
+                    android:id="@+id/details_name"
+                    android:text="鹿晗"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="#000"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/sp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/details_name"
+                    android:layout_toRightOf="@id/details_img"
+                    android:text="111111"
+                    android:id="@+id/details_guanzhu"
+                    android:textSize="@dimen/sp_10"/>
+
+                <TextView
+                    android:layout_toRightOf="@id/details_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/details_life"
+                    android:text="现居地 北京"
+                    android:layout_marginTop="@dimen/sp_10"
+                    android:layout_below="@id/details_guanzhu"/>
+
+                <!--最下面的那个自我介绍-->
+                <TextView
+                    android:layout_toRightOf="@id/details_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="个人介绍哈哈哈哈"
+                    android:layout_below="@id/details_life"
+                    android:layout_marginTop="@dimen/sp_20"
+                    android:id="@+id/introduction"/>
+
+                <Button
+                    android:background="@drawable/shoucang_button"
+                    android:layout_width="@dimen/sp_20"
+                    android:layout_height="@dimen/sp_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/sp_10"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_margin="@dimen/sp_10"
+                android:layout_below="@id/re"
+                android:id="@+id/details_text"
+                android:text="大家好 我是吴晓波"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+   <android.support.design.widget.TabLayout
+       android:layout_gravity="center"
+       android:layout_marginTop="@dimen/sp_10"
+       app:tabMode="fixed"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:id="@+id/details_tab"
+       android:layout_weight="0.8"/>
+
+   <android.support.v4.view.ViewPager
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="2"
+       android:id="@+id/details_vp"/>
+</LinearLayout>

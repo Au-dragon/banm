@@ -1,4 +1,4 @@
-package com.example.banmi;
+package com.example.banmi.bean;
 
 import java.util.List;
 
@@ -83,7 +83,7 @@ public class BanMiBean {
             this.banmi = banmi;
         }
 
-        public static class BanmiBean {
+        public static class BanmiBean  {
             /**
              * id : 57
              * name : 吴晓波
