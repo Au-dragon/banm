@@ -1,7 +1,7 @@
 package com.example.banmi.model;
 
+import com.example.banmi.api.MyServer;
 import com.example.banmi.bean.BanMiBean;
-import com.example.banmi.MyServer;
 
 import io.reactivex.Observable;
 import io.reactivex.Observer;
@@ -21,7 +21,7 @@ public class BanMoModel {
     }
 
     public void getData(final CallBack callBack){
-        Retrofit retrofit = new Retrofit.Builder().baseUrl(MyServer.url)
+        Retrofit retrofit = new Retrofit.Builder().baseUrl(MyServer.Url)
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .build();
