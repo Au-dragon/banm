@@ -13,5 +13,4 @@
         <item name="android:layout_marginTop">@dimen/dp_10</item>
         <!--<item name="android:background">@drawable/edittext_shape</item>-->
     </style>
-
 </resources>

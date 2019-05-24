@@ -1,9 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".activity.LoginTwo">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:layout_width="@dimen/dp_201"
+        android:layout_height="@dimen/dp_22"
+        android:layout_marginLeft="@dimen/dp_23"
+        android:layout_marginTop="@dimen/dp_60"
+        android:text="你好，为了获取更好的服务"
+        android:textColor="@color/ju"
+        android:textSize="@dimen/dp_16" />
+
+    <TextView
+        android:layout_width="@dimen/dp_198"
+        android:layout_height="@dimen/dp_38"
+        android:layout_marginLeft="@dimen/dp_23"
+        android:layout_marginTop="@dimen/dp_9"
+        android:text="请登录伴米旅行"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp_27" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_80"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp_14"
+            android:layout_height="@dimen/dp_21"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_31"
+            android:background="@drawable/phone" />
+
+        <TextView
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:text="+86"
+            android:textColor="@color/h6363" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_7"
+            android:layout_height="@dimen/dp_5"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_toRightOf="@+id/tv"
+            android:background="@drawable/select" />
+
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dp_39"
+            android:background="@null"
+            android:hint="请输入手机号码"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:textColor="@color/hc8c8"
+            android:textSize="@dimen/dp_16" />
+
+        <Button
+            android:id="@+id/tv_but"
+            android:layout_width="@dimen/dp_90"
+            android:layout_height="@dimen/dp_40"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dp_22"
+            android:background="@drawable/button_highlight"
+            android:text="发送验证码"
+            android:textColor="@color/bai"
+            android:textSize="@dimen/dp_12" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_31"
+        android:layout_marginTop="@dimen/dp_2"
+        android:layout_marginRight="@dimen/dp_22"
+        android:src="@drawable/xian" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_270"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录或注册即同意伴米旅行" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/ju"
+            android:text="用户协议"
+            android:textColor="@color/ju"
+            android:textSize="@dimen/dp_13" />
+    </LinearLayout>
+</LinearLayout>

@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:background="@color/bai"
     android:layout_height="match_parent"
     tools:context=".activity.CallActivity">
+
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolBar"
         android:layout_width="match_parent"
@@ -17,7 +19,134 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="个人信息"
-            android:textSize="@dimen/dp_20" />
+            android:text="联系客服"
+            android:textSize="@dimen/dp_16" />
     </android.support.v7.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D7D7D7"/>
+    <ImageView
+        android:layout_width="@dimen/dp_76"
+        android:layout_height="@dimen/dp_76"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/fei" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:text="伴米旅行"
+        android:textSize="@dimen/dp_16" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="@dimen/dp_8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="@dimen/dp_15"
+                    android:layout_centerVertical="true"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:background="@drawable/wdian" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_18"
+                    android:layout_toRightOf="@+id/iv1"
+                    android:text="400-086-7800"
+                    android:textSize="@dimen/dp_14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_width="@dimen/dp_15"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:background="@drawable/xin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_18"
+                    android:layout_toRightOf="@+id/iv2"
+                    android:text="contact@banmi.com"
+                    android:textSize="@dimen/dp_14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/iv3"
+                    android:layout_width="@dimen/dp_15"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:background="@drawable/wei" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_18"
+                    android:layout_toRightOf="@+id/iv3"
+                    android:text="sagyran"
+                    android:textSize="@dimen/dp_14" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_28"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:text="免费声明"
+        android:textColor="@color/hui99"
+        android:textSize="@dimen/dp_14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginRight="@dimen/dp_20"
+        android:text="1.伴米旅行app中部分图片来源于网路，图片版权属于原作者，本app转载仅供大家观赏,交流，切勿用于任何商业活动。"
+        android:textColor="@color/hui99"
+        android:textSize="@dimen/dp_12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:text="2.如果侵占了您的合法权益，请您及时与我们联系，我们会在第一时间删除相关内容，或付费购买。"
+        android:textColor="@color/hui99"
+        android:textSize="@dimen/dp_12" />
 </LinearLayout>
