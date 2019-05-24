@@ -5,14 +5,11 @@ import android.os.Bundle;
 
 import com.example.banmi.R;
 
-
-//我的关注etdgfddgsaeweggd
-//我的关注111122
-public class AttentionActivity extends AppCompatActivity {
+public class LoginTwo extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_attention);
+        setContentView(R.layout.activity_login_two);
     }
 }

@@ -8,6 +8,7 @@ public class BasePresenter<V> {
     private WeakReference<V> weakReference;
 
     public V mView;
+
     public void attachView(V v){
         weakReference = new WeakReference<V>(v);
         mView = weakReference.get();

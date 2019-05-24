@@ -1,7 +1,6 @@
 package com.example.banmi;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -16,7 +15,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.banmi.activity.AttentionActivity;
 import com.example.banmi.activity.CallActivity;
@@ -27,6 +25,7 @@ import com.example.banmi.activity.MoneyActivity;
 import com.example.banmi.activity.PersonalActivity;
 import com.example.banmi.activity.TalkActivity;
 import com.example.banmi.activity.TourismActivity;
+import com.example.banmi.adapter.VpAdapter;
 import com.example.banmi.base.BaseActivity;
 import com.example.banmi.fragment.BanmiFragment;
 import com.example.banmi.fragment.HomeFragment;
@@ -36,8 +35,7 @@ import com.example.banmi.view.EmptyView;
 import java.util.ArrayList;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
-
+//rtsger7dgytrstriedycgytytgholtsrdcujgyg
 public class MainActivity extends BaseActivity<EmptyView, EmptyPresenter<EmptyView>> implements EmptyView {
 
     @BindView(R.id.toolbar)
