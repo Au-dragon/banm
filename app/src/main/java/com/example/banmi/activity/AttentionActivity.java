@@ -7,11 +7,15 @@ import com.example.banmi.R;
 
 
 //我的关注
+//我的关注
+
 public class AttentionActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_attention);
+
+
     }
 }

@@ -5,11 +5,16 @@
     <color name="colorAccent">#D81B60</color>
     <color name="white">#F0F8FF</color>
     <color name="black">#000000</color>
+    <color name="bleak">#000</color>
     <color name="ju">#FA6A13</color>
     <color name="ju2">#F5DACA</color>
     <color name="h6363">#636363</color>
     <color name="hc8c8">#C8C8C8</color>
     <color name="bai">#ffffff</color>
+    <color name="c_373737">#373737</color>
+    <color name="c_636363">#636363</color>
+    <color name="c_999999">#999999</color>
+    <color name="c_FFA436">#ffa436</color>
     <color name="hui99">#999999</color>
     <color name="green">#4DAE46</color>
 </resources>

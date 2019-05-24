@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_marginTop="@dimen/dp_20"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+    <CheckBox
+
+        android:gravity="center"
+        android:layout_width="@dimen/dp_123"
+        android:layout_height="@dimen/dp_65"
+        android:text="30元"
+        android:id="@+id/c1"
+        android:textColor="@color/ju"
+        android:button="@null"
+        android:background="@drawable/selector_recharge"/>
+    <CheckBox
+        android:gravity="center"
+        android:layout_width="@dimen/dp_123"
+        android:layout_height="@dimen/dp_65"
+        android:text="50元"
+        android:id="@+id/c2"
+        android:textColor="@color/ju"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:button="@null"
+        android:background="@drawable/selector_recharge"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <CheckBox
+
+            android:gravity="center"
+            android:layout_width="@dimen/dp_123"
+            android:layout_height="@dimen/dp_65"
+            android:text="88元"
+            android:id="@+id/c3"
+            android:textColor="@color/ju"
+            android:button="@null"
+            android:background="@drawable/selector_recharge"/>
+        <CheckBox
+            android:gravity="center"
+            android:layout_width="@dimen/dp_123"
+            android:layout_height="@dimen/dp_65"
+            android:text="108元"
+            android:id="@+id/c4"
+            android:textColor="@color/ju"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:button="@null"
+            android:background="@drawable/selector_recharge"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="支付金额108元"
+        android:textColor="@color/ju"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_money"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="确认支付"
+        android:textColor="@color/bai"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="充值如遇到问题，请拨打客服电话400-086-7800，或添加官方
+客服微信sagyran，我们会为您解决。"
+        android:layout_margin="@dimen/dp_10"/>
+</LinearLayout>
