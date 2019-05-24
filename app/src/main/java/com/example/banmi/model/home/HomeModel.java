@@ -8,4 +8,5 @@ public class HomeModel{
     public interface BaseCallBack{
         void getHomeSuccess(List<HomeBean> homeBeans);
     }
+
 }
