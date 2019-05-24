@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_margin="@dimen/dp_20"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_180"
+    android:background="@drawable/shape_money"
+    >
+<TextView
+    android:id="@+id/t1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/bai"
+    android:text="99"
+    android:textSize="@dimen/dp_65"
+    android:layout_marginLeft="@dimen/dp_119"
+    android:layout_marginTop="@dimen/dp_27"
+    />
+    <TextView
+        android:layout_toRightOf="@id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="元"
+        android:textColor="@color/bai"
+        android:textSize="@dimen/dp_18"
+        android:layout_alignBottom="@id/t1"
+        android:layout_marginBottom="@dimen/dp_12"/>
+    <Button
+        android:layout_width="@dimen/dp_92"
+        android:layout_height="@dimen/dp_30"
+        android:id="@+id/win"
+        android:background="@drawable/shape_money_button"
+        android:text="赢取奖金"
+        android:textColor="@color/ju"
+        android:layout_marginLeft="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_120"/>
+    <Button
+        android:layout_width="@dimen/dp_92"
+        android:layout_height="@dimen/dp_30"
+        android:id="@+id/recharge"
+        android:background="@drawable/shape_money_button"
+        android:text="去充值"
+        android:textColor="@color/ju"
+        android:layout_marginLeft="@dimen/dp_183"
+        android:layout_marginTop="@dimen/dp_120"/>
+</RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用记录"
+        android:layout_marginLeft="@dimen/dp_14"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/myRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

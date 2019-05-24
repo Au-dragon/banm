@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import com.example.banmi.R;
 
-//联系客服
+//联系客服2
 public class CallActivity extends AppCompatActivity {
 
     @Override
