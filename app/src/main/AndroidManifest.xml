@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET"/>
+
+
     <application
         android:name=".base.BaseApp"
         android:allowBackup="true"
@@ -33,6 +35,10 @@
         <activity android:name=".activity.DetectionActivity" />
         <activity android:name=".activity.PersonalActivity" />
         <activity android:name=".activity.MoneyActivity" />
+        <activity android:name=".activity.DetailsActivity"></activity>
+        <activity android:name=".activity.NotifactionActivity" />
+        <activity android:name=".activity.MessageActivity" />
+        <activity android:name=".activity.MessageTalkActivity"></activity>
     </application>
 
 </manifest>

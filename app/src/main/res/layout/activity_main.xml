@@ -23,11 +23,19 @@
                     android:layout_width="@dimen/dp_60"
                     android:layout_height="@dimen/dp_60" />
                 <ImageView
-                    android:layout_marginLeft="10dp"
+                    android:id="@+id/notifaction"
+                    android:layout_margin="@dimen/dp_17"
+                    android:layout_toLeftOf="@+id/message"
+                    android:src="@mipmap/dangdang"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+                <ImageView
+                    android:id="@+id/message"
+                    android:layout_margin="@dimen/dp_17"
                     android:layout_alignParentRight="true"
                     android:src="@mipmap/message"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp" />
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
             </RelativeLayout>
         </android.support.v7.widget.Toolbar>
         <android.support.v4.view.ViewPager
