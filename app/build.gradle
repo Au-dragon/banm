@@ -60,7 +60,7 @@ dependencies {
     //butterknife
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
-    implementation'com.android.support:cardview-v7:28.0.0'     //CardView依赖
+    implementation 'com.android.support:cardview-v7:28.0.0'     //CardView依赖
     // 图片处理
     implementation 'jp.wasabeef:glide-transformations:3.3.0'
     //滑动删除
