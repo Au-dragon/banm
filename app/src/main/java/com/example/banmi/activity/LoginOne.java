@@ -108,7 +108,7 @@ public class LoginOne extends AppCompatActivity implements View.OnClickListener 
                         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher);
                         Notification build = new NotificationCompat.Builder(this, channelId)
                                 .setSmallIcon(R.mipmap.ic_launcher)//小图标,必要
-                                .setContentTitle("1008610010")//标题,必要
+                                .setContentTitle("1008610010")//标题,必要,
                                 .setContentText("本次验证码为"+randomnum)//内容,必要
                                //.setContentIntent(pendingIntent)//设置延时意图
                                 .setAutoCancel(true)//点击通知消失,必须和延时意图配合使用
