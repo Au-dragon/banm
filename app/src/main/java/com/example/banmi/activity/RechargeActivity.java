@@ -59,7 +59,7 @@ public class RechargeActivity extends AppCompatActivity {
     }
     public void setmMyTab(){
         mMyTab.addTab(mMyTab.newTab().setText("现金"));
-        mMyTab.addTab(mMyTab.newTab().setText("代金卷"));
+        mMyTab.addTab(mMyTab.newTab().setText("代金券"));
         mMyTab.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
