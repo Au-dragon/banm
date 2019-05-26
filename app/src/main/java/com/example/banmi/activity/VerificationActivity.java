@@ -12,14 +12,15 @@ import android.widget.TextView;
 
 import com.example.banmi.R;
 
+//验证
 public class VerificationActivity extends AppCompatActivity {
 
     private ImageView mIv;
     private TextView[] textView;
     private EditText mItemEdittext;
-private StringBuffer stringBuffer=new StringBuffer();
+    private StringBuffer stringBuffer = new StringBuffer();
     private String inputContent;
-    private int count=4;
+    private int count = 4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
