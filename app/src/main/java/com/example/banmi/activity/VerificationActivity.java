@@ -55,7 +55,7 @@ public class VerificationActivity extends AppCompatActivity {
     }
 
     private void test() {
-        //获得验证码。
+        //获得验证码。。
         String phoneCode = mPc1.getPhoneCode();
         //......
         //......
