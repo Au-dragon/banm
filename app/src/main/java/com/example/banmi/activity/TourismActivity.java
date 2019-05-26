@@ -2,6 +2,7 @@ package com.example.banmi.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -21,7 +22,7 @@ public class TourismActivity extends AppCompatActivity {
      * 2017/10/25
      */
     private TextView mTvData;
-    private RecyclerView mRlv;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +35,6 @@ public class TourismActivity extends AppCompatActivity {
         mTv = (TextView) findViewById(R.id.tv);
         mToolBar = (Toolbar) findViewById(R.id.toolBar);
         mTvData = (TextView) findViewById(R.id.tv_data);
-        mRlv = (RecyclerView) findViewById(R.id.rlv);
         mToolBar.setTitle("");
         setSupportActionBar(mToolBar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

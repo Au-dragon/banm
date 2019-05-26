@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="@dimen/sp_10"
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginLeft="@dimen/sp_10"
+                android:id="@+id/time"
+                android:text="2019.3.2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:layout_below="@id/time"
+            android:layout_margin="@dimen/sp_10"
+            android:layout_width="@dimen/sp_30"
+            android:layout_height="@dimen/sp_30"
+            android:src="@mipmap/ic_launcher"
+           android:id="@+id/touxiang"/>
+
+
+            <TextView
+                android:layout_below="@id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:layout_toRightOf="@id/touxiang"
+                android:text="姓名"
+                android:layout_margin="@dimen/sp_12"/>
+        <View
+            android:layout_below="@id/touxiang"
+            android:id="@+id/line"
+            android:layout_marginLeft="@dimen/sp_20"
+            android:background="#ed9048"
+            android:layout_marginBottom="@dimen/sp_20"
+            android:layout_width="@dimen/dp_2"
+            android:layout_height="@dimen/dp_200"/>
+
+
+            <ImageView
+                android:id="@+id/mainimg"
+                android:layout_toRightOf="@id/line"
+                android:layout_marginLeft="@dimen/sp_20"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_below="@id/title"
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="@dimen/dp_150" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我是标题"
+                android:layout_toRightOf="@id/line"
+                android:layout_margin="@dimen/sp_10"
+                android:layout_below="@id/name"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

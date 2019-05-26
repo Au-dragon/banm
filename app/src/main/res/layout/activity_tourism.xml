@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/tou"
     android:orientation="vertical"
     tools:context=".activity.TourismActivity">
 
@@ -21,20 +22,19 @@
             android:text="已购旅程"
             android:textSize="@dimen/dp_16" />
     </android.support.v7.widget.Toolbar>
-
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/rlv"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <TextView
-        android:id="@+id/tv_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/dp_12"
-        android:layout_marginLeft="@dimen/dp_12"
-        android:layout_marginTop="@dimen/dp_12"
-        android:layout_marginBottom="@dimen/dp_2"
-        android:text="2017/10/25" />
+        android:text="暂无购买记录"
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rlv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
+        android:textSize="18sp" />
+    </LinearLayout>
 </LinearLayout>

@@ -1,6 +1,7 @@
 package com.example.banmi.api;
 
 import com.example.banmi.bean.BanMiBean;
+import com.example.banmi.bean.DongTaiBean;
 import com.example.banmi.bean.HomeBean;
 
 import io.reactivex.Observable;
@@ -14,4 +15,9 @@ public interface MyServer {
     //伴米界面
     @GET()
     Observable<BanMiBean> getBanMiData(@Url String url);
+
+    String dturl = "http://v.juhe.cn/toutiao/";
+    @GET("index?type=&key=83a69c67e9272f816e42450ef0eb50ee")
+    Observable<DongTaiBean> getDongtai();
+
 }
