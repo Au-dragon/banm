@@ -101,7 +101,7 @@ public class LoginOne extends AppCompatActivity implements View.OnClickListener 
 //                        Intent intent = new Intent(this, VerificationActivity.class);
 //                        PendingIntent pendingIntent = PendingIntent.getActivity(this,
 //                                1, intent, PendingIntent.FLAG_UPDATE_CURRENT);
-                        //获取一个广播的延时意图
+                        //获取一个广播的延时意图.
                         //PendingIntent.getBroadcast()
                         //获取一个开启服务的意图
                         //PendingIntent.getService()
