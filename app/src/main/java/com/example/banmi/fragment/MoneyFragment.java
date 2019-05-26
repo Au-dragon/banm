@@ -14,6 +14,7 @@ import android.widget.Button;
 
 import com.example.banmi.R;
 import com.example.banmi.activity.RechargeActivity;
+import com.example.banmi.activity.WinActivity;
 import com.example.banmi.adapter.MoneyRvAdapter;
 import com.example.banmi.bean.MoneyBean;
 
@@ -75,6 +76,8 @@ list.add(new MoneyBean("分享 [伴米]","2017/10/25","+ 2 元"));
             default:
                 break;
             case R.id.win:
+                Intent intent1 = new Intent(getContext(),WinActivity.class);
+                startActivity(intent1);
                 break;
             case R.id.recharge:
                 Intent intent = new Intent(getContext(),RechargeActivity.class);

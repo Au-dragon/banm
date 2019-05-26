@@ -1,5 +1,6 @@
 package com.example.banmi.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -8,6 +9,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
+import com.example.banmi.MainActivity;
 import com.example.banmi.R;
 
 //侧滑菜单头部局个人信息
@@ -46,6 +50,8 @@ public class PersonalActivity extends AppCompatActivity implements View.OnClickL
                 finish();
             }
         });
+        RequestOptions requestOptions = new RequestOptions().circleCrop();
+        Glide.with(this).load(R.mipmap.banmi_highlight).apply(requestOptions).into(mIv);
     }
 
     @Override
@@ -54,7 +60,7 @@ public class PersonalActivity extends AppCompatActivity implements View.OnClickL
             default:
                 break;
             case R.id.bt:
-
+                startActivity(new Intent(PersonalActivity.this, MainActivity.class));
                 break;
         }
     }
